@@ -1,0 +1,87 @@
+Before running this project you will need these fields in the database
+Note: check picture in readme folder for database structure.
+
+DATABASE NAME : jobboard
+
+TABLES : admins , categories , jobs , job_applications , saved_jobs , searches , users
+
+
+FIELDS/COLUMNS OF 
+
+admins(table)
+
+	1) id 		(primary key)
+	2) adminname	(varchar-200)
+	3) email	(varchar-200)
+	4) mypassword 	(varchar-200)
+	5) created_at   (CURRENT-TIMESTAMP)
+
+categories(table)
+
+	1) id 		(primary key)
+	2) name 	(varchar-200)
+	3) created_at   (CURRENT_TIMESTAMP)
+
+jobs (tables)
+
+	1) id 			(primary key)
+	2) job_title 		(varchar-200)
+	3) job_region 		(varchar-200)
+        4) job_type 		(varchar-200)
+	5) vaccancy 		(INT)
+	6) job_category 	(varchar-200)
+	7) experience 		(varchar-200)
+	8) salary 		(varchar-200)
+	9) gender 		(varchar-200)
+       10) application_deadline (varchar-200)
+       11) job_description	(TEXT)
+       12) responsibilities 	(TEXT)
+       13) education_experience (TEXT)
+       14) other_benefits 	(TEXT)
+       15) company_email 	(varchar-200)
+       16) company_name 	(varchar-200)
+       17) company_id 		(INT)
+       18) company_image 	(varchar-200)
+       19) status 		(INT)---status value should be 0 or 1
+       20) created_at 		(CURRENT_TIMESTAMP)
+
+job_applications (table)
+
+	1) id 		(primary key)
+	2) username 	(varchar-200)
+	3) email 	(varchar-200)
+	4) cv 		(varchar-200)
+	5) worker_id 	(INT)
+	6) job_id 	(INT)
+	7) job_title 	(varchar-200)
+	8) company_id 	(INT)
+	9) created_at 	(CURRENT_TIMESTAMP)
+
+saved_jobs (tables)
+
+	1) id 		(primary key)
+	2) job_id 	(INT)
+	3) worker_id 	(INT)
+	4) created_at 	(CURRENT_TIMESTAMP)
+
+searches (table)
+
+	1) id 		(primary key)
+	2) keyword 	(varchar-200)
+	3) created_at 	(CURRENT_TIMESTAMP)
+
+users (table)
+
+	1) id 		(primary key)
+	2) username 	(varchar-200)
+	3) email 	(varchar-200)
+	4) mypassword 	(varchar-200)
+	5) img 		(varchar-200)
+	6) type 	(varchar-200)
+	7) cv 		(varchar-200)
+	8) title 	(varchar-200)
+	9) bio 		(varchar-200)
+       10) facebook 	(varchar-200)
+       11) twitter 	(varchar-200)
+       12) linkedin 	(varchar-200)
+       13) created_at 	(CURRENT_TIMESTAMP)
